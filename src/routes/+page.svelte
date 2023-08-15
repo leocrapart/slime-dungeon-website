@@ -2,10 +2,12 @@
   import Counter from "./Counter.svelte";
   import welcome from "$lib/images/svelte-welcome.webp";
   import welcome_fallback from "$lib/images/svelte-welcome.png";
+
+  import image from "$lib/images/image.png";
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Slime Dungeon</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -18,6 +20,17 @@
       </picture>
     </span>
   </h1> -->
+  <div class="p-2" />
+  <div class="text-4xl font-bold">Slime Dungeon</div>
+  <div class="p-4" />
+
+  <img src={image} alt="" />
+
+  <div class="p-4" />
+
+  <div class="text-xl font-bold">Download</div>
+
+  <div class="p-2" />
 
   <button
     class="transition ease-in-out delay-100 duration-300
